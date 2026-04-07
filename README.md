@@ -760,12 +760,6 @@ Solution:
 
 ---
 
-## 📄 License
-
-This project is part of the PlacementPro system. Contact the development team for licensing details.
-
----
-
 ## 🆘 Support
 
 For issues, questions, or contributions, please:
@@ -773,9 +767,4 @@ For issues, questions, or contributions, please:
 - Contact the development team
 - Review existing documentation
 
----
 
-**Last Updated**: April 7, 2026  
-**Version**: 1.0.0  
-**Java Version**: 21  
-**Spring Boot Version**: 3.2.4
