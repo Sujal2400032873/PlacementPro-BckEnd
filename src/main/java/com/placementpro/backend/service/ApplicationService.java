@@ -149,10 +149,10 @@ public class ApplicationService {
     }
 
     @CacheEvict(cacheNames = {"adminDashboard", "officerDashboard"}, allEntries = true)
+    @Transactional
     public ApplicationDTO updateStatus(Long id, String status) {
         User employer = currentUserService.getCurrentUser();
         Application application = applicationRepository.findDetailedById(id)
-                .or(() -> applicationRepository.findById(id))
                 .orElseThrow(() -> new RuntimeException("Application not found"));
         validateEmployerOwnership(application.getJob(), employer);
 
