@@ -1,0 +1,641 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.placementpro:backend >----------------------
+[INFO] Building PlacementPro_Backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ backend ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 48 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/package-info.java:[8,1] annotation interface not applicable to this kind of declaration
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ContactService.java:[17,55] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.ContactMessage
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/JwtUtils.java:[28,43] cannot find symbol
+  symbol:   method getEmail()
+  location: variable userPrincipal of type com.placementpro.backend.security.UserDetailsImpl
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/NotificationService.java:[26,49] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Notification
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[47,69] cannot find symbol
+  symbol:   method getEmail()
+  location: variable loginRequest of type com.placementpro.backend.dto.LoginRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[47,94] cannot find symbol
+  symbol:   method getPassword()
+  location: variable loginRequest of type com.placementpro.backend.dto.LoginRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[52,60] cannot find symbol
+  symbol:   method getEmail()
+  location: variable loginRequest of type com.placementpro.backend.dto.LoginRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[55,28] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.dto.AuthResponse
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[62,57] cannot find symbol
+  symbol:   method getEmail()
+  location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[63,20] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[66,62] cannot find symbol
+  symbol:   method getRole()
+  location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[68,40] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[68,71] cannot find symbol
+  symbol:   method getRole()
+  location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[72,25] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[73,38] cannot find symbol
+  symbol:   method getName()
+  location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[74,39] cannot find symbol
+  symbol:   method getEmail()
+  location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[75,57] cannot find symbol
+  symbol:   method getPassword()
+  location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[78,33] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[81,13] cannot find symbol
+  symbol:   method getRoles()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[83,28] cannot find symbol
+  symbol:   method getRole()
+  location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[84,17] cannot find symbol
+  symbol:   method getProfile()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[85,35] cannot find symbol
+  symbol:   method getRole()
+  location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[86,17] cannot find symbol
+  symbol:   method getProfile()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[87,17] cannot find symbol
+  symbol:   method getProfile()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[93,16] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[100,30] cannot find symbol
+  symbol:   method getExpiryDate()
+  location: variable verificationToken of type com.placementpro.backend.entity.EmailVerificationToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[104,38] cannot find symbol
+  symbol:   method getUser()
+  location: variable verificationToken of type com.placementpro.backend.entity.EmailVerificationToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[105,13] cannot find symbol
+  symbol:   method setEmailVerified(boolean)
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[106,13] cannot find symbol
+  symbol:   method setEnabled(boolean)
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[110,16] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[118,59] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.PasswordResetToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[127,16] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[134,23] cannot find symbol
+  symbol:   method getExpiryDate()
+  location: variable resetToken of type com.placementpro.backend.entity.PasswordResetToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[138,31] cannot find symbol
+  symbol:   method getUser()
+  location: variable resetToken of type com.placementpro.backend.entity.PasswordResetToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[139,13] cannot find symbol
+  symbol:   method setPassword(java.lang.String)
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[143,16] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[39,50] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[40,52] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[41,53] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[42,52] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[45,26] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[51,33] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[53,14] cannot find symbol
+  symbol:   method getRoles()
+  location: variable admin of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[55,28] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[61,33] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[67,16] cannot find symbol
+  symbol:   method getRoles()
+  location: variable student of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[69,29] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[75,33] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[77,17] cannot find symbol
+  symbol:   method getRoles()
+  location: variable employer of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[79,28] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[85,33] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[87,16] cannot find symbol
+  symbol:   method getRoles()
+  location: variable officer of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[92,23] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[105,23] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[121,39] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[51,55] cannot find symbol
+  symbol:   method getEmployerId()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[55,12] cannot find symbol
+  symbol:   method setId(<nulltype>)
+  location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[56,12] cannot find symbol
+  symbol:   method setEmployer(com.placementpro.backend.entity.User)
+  location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[57,12] cannot find symbol
+  symbol:   method setPostedAt(java.time.LocalDateTime)
+  location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[58,12] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[69,36] cannot find symbol
+  symbol:   method getTitle()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[70,42] cannot find symbol
+  symbol:   method getCompanyName()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[71,39] cannot find symbol
+  symbol:   method getLocation()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[72,42] cannot find symbol
+  symbol:   method getDescription()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[73,43] cannot find symbol
+  symbol:   method getRequirements()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[74,37] cannot find symbol
+  symbol:   method getSalary()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[75,35] cannot find symbol
+  symbol:   method getType()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[76,37] cannot find symbol
+  symbol:   method isActive()
+  location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[89,16] cannot find symbol
+  symbol:   method getEmployer()
+  location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[90,34] cannot find symbol
+  symbol:   method getEmployer()
+  location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/AuthController.java:[25,21] cannot find symbol
+  symbol:   method getMessage()
+  location: variable response of type com.placementpro.backend.dto.MessageResponse
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[36,66] cannot find symbol
+  symbol:   method getRoles()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[41,21] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[42,21] cannot find symbol
+  symbol:   method getName()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[43,21] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[44,21] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/EmailService.java:[25,74] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.EmailVerificationToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/EmailService.java:[38,59] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.PasswordResetToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[36,29] cannot find symbol
+  symbol:   method getName()
+  location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[37,20] cannot find symbol
+  symbol:   method getProfile()
+  location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[38,35] cannot find symbol
+  symbol:   method getProfile()
+  location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[39,37] cannot find symbol
+  symbol:   method getProfile()
+  location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[40,42] cannot find symbol
+  symbol:   method getProfile()
+  location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[41,38] cannot find symbol
+  symbol:   method getProfile()
+  location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[42,41] cannot find symbol
+  symbol:   method getProfile()
+  location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[43,43] cannot find symbol
+  symbol:   method getProfile()
+  location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[55,77] cannot find symbol
+  symbol:   method getJobId()
+  location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[55,104] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[59,56] cannot find symbol
+  symbol:   method getJobId()
+  location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[62,62] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[65,46] cannot find symbol
+  symbol:   method builder()
+  location: class com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[70,38] cannot find symbol
+  symbol:   method getNotes()
+  location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[82,20] cannot find symbol
+  symbol:   method setStatus(java.lang.String)
+  location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[89,24] cannot find symbol
+  symbol:   method getJob()
+  location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[90,37] cannot find symbol
+  symbol:   method getJob()
+  location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[91,40] cannot find symbol
+  symbol:   method getJob()
+  location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[92,43] cannot find symbol
+  symbol:   method getJob()
+  location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[94,24] cannot find symbol
+  symbol:   method getStudent()
+  location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[95,41] cannot find symbol
+  symbol:   method getStudent()
+  location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/ApplicationController.java:[53,83] cannot find symbol
+  symbol:   method getMessage()
+  location: variable statusRequest of type com.placementpro.backend.dto.MessageResponse
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.406 s
+[INFO] Finished at: 2026-04-03T00:55:31+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project backend: Compilation failure: Compilation failure: 
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/package-info.java:[8,1] annotation interface not applicable to this kind of declaration
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ContactService.java:[17,55] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.ContactMessage
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/JwtUtils.java:[28,43] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable userPrincipal of type com.placementpro.backend.security.UserDetailsImpl
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/NotificationService.java:[26,49] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Notification
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[47,69] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable loginRequest of type com.placementpro.backend.dto.LoginRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[47,94] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable loginRequest of type com.placementpro.backend.dto.LoginRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[52,60] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable loginRequest of type com.placementpro.backend.dto.LoginRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[55,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.dto.AuthResponse
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[62,57] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[63,20] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[66,62] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[68,40] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[68,71] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[72,25] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[73,38] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[74,39] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[75,57] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[78,33] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[81,13] cannot find symbol
+[ERROR]   symbol:   method getRoles()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[83,28] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[84,17] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[85,35] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable registerRequest of type com.placementpro.backend.dto.RegisterRequest
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[86,17] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[87,17] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[93,16] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[100,30] cannot find symbol
+[ERROR]   symbol:   method getExpiryDate()
+[ERROR]   location: variable verificationToken of type com.placementpro.backend.entity.EmailVerificationToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[104,38] cannot find symbol
+[ERROR]   symbol:   method getUser()
+[ERROR]   location: variable verificationToken of type com.placementpro.backend.entity.EmailVerificationToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[105,13] cannot find symbol
+[ERROR]   symbol:   method setEmailVerified(boolean)
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[106,13] cannot find symbol
+[ERROR]   symbol:   method setEnabled(boolean)
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[110,16] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[118,59] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.PasswordResetToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[127,16] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[134,23] cannot find symbol
+[ERROR]   symbol:   method getExpiryDate()
+[ERROR]   location: variable resetToken of type com.placementpro.backend.entity.PasswordResetToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[138,31] cannot find symbol
+[ERROR]   symbol:   method getUser()
+[ERROR]   location: variable resetToken of type com.placementpro.backend.entity.PasswordResetToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[139,13] cannot find symbol
+[ERROR]   symbol:   method setPassword(java.lang.String)
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/AuthService.java:[143,16] constructor MessageResponse in class com.placementpro.backend.dto.MessageResponse cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[39,50] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[40,52] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[41,53] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[42,52] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Role
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[45,26] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[51,33] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[53,14] cannot find symbol
+[ERROR]   symbol:   method getRoles()
+[ERROR]   location: variable admin of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[55,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[61,33] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[67,16] cannot find symbol
+[ERROR]   symbol:   method getRoles()
+[ERROR]   location: variable student of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[69,29] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[75,33] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[77,17] cannot find symbol
+[ERROR]   symbol:   method getRoles()
+[ERROR]   location: variable employer of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[79,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[85,33] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Profile
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[87,16] cannot find symbol
+[ERROR]   symbol:   method getRoles()
+[ERROR]   location: variable officer of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[92,23] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[105,23] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/config/DataSeeder.java:[121,39] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[51,55] cannot find symbol
+[ERROR]   symbol:   method getEmployerId()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[55,12] cannot find symbol
+[ERROR]   symbol:   method setId(<nulltype>)
+[ERROR]   location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[56,12] cannot find symbol
+[ERROR]   symbol:   method setEmployer(com.placementpro.backend.entity.User)
+[ERROR]   location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[57,12] cannot find symbol
+[ERROR]   symbol:   method setPostedAt(java.time.LocalDateTime)
+[ERROR]   location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[58,12] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[69,36] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[70,42] cannot find symbol
+[ERROR]   symbol:   method getCompanyName()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[71,39] cannot find symbol
+[ERROR]   symbol:   method getLocation()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[72,42] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[73,43] cannot find symbol
+[ERROR]   symbol:   method getRequirements()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[74,37] cannot find symbol
+[ERROR]   symbol:   method getSalary()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[75,35] cannot find symbol
+[ERROR]   symbol:   method getType()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[76,37] cannot find symbol
+[ERROR]   symbol:   method isActive()
+[ERROR]   location: variable jobDTO of type com.placementpro.backend.dto.JobDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[89,16] cannot find symbol
+[ERROR]   symbol:   method getEmployer()
+[ERROR]   location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/JobService.java:[90,34] cannot find symbol
+[ERROR]   symbol:   method getEmployer()
+[ERROR]   location: variable job of type com.placementpro.backend.entity.Job
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/AuthController.java:[25,21] cannot find symbol
+[ERROR]   symbol:   method getMessage()
+[ERROR]   location: variable response of type com.placementpro.backend.dto.MessageResponse
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[36,66] cannot find symbol
+[ERROR]   symbol:   method getRoles()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[41,21] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[42,21] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[43,21] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/security/UserDetailsImpl.java:[44,21] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/EmailService.java:[25,74] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.EmailVerificationToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/EmailService.java:[38,59] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.PasswordResetToken
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[36,29] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[37,20] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[38,35] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable user of type com.placementpro.backend.entity.User
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[39,37] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[40,42] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[41,38] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[42,41] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/UserController.java:[43,43] cannot find symbol
+[ERROR]   symbol:   method getProfile()
+[ERROR]   location: variable userDTO of type com.placementpro.backend.dto.UserDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[55,77] cannot find symbol
+[ERROR]   symbol:   method getJobId()
+[ERROR]   location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[55,104] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[59,56] cannot find symbol
+[ERROR]   symbol:   method getJobId()
+[ERROR]   location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[62,62] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[65,46] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[70,38] cannot find symbol
+[ERROR]   symbol:   method getNotes()
+[ERROR]   location: variable applicationDTO of type com.placementpro.backend.dto.ApplicationDTO
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[82,20] cannot find symbol
+[ERROR]   symbol:   method setStatus(java.lang.String)
+[ERROR]   location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[89,24] cannot find symbol
+[ERROR]   symbol:   method getJob()
+[ERROR]   location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[90,37] cannot find symbol
+[ERROR]   symbol:   method getJob()
+[ERROR]   location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[91,40] cannot find symbol
+[ERROR]   symbol:   method getJob()
+[ERROR]   location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[92,43] cannot find symbol
+[ERROR]   symbol:   method getJob()
+[ERROR]   location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[94,24] cannot find symbol
+[ERROR]   symbol:   method getStudent()
+[ERROR]   location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/service/ApplicationService.java:[95,41] cannot find symbol
+[ERROR]   symbol:   method getStudent()
+[ERROR]   location: variable application of type com.placementpro.backend.entity.Application
+[ERROR] /D:/PlacementPro newwwww/PlacementPro_Backend/src/main/java/com/placementpro/backend/controller/ApplicationController.java:[53,83] cannot find symbol
+[ERROR]   symbol:   method getMessage()
+[ERROR]   location: variable statusRequest of type com.placementpro.backend.dto.MessageResponse
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
