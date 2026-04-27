@@ -8,10 +8,15 @@ import io.github.bucket4j.ConsumptionProbe;
 import jakarta.validation.Valid;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +32,15 @@ public class AuthController {
     @Autowired
     private IpRateLimiter ipRateLimiter;
 
+    @Value("${app.cookie.secure:false}")
+    private boolean cookieSecure;
+
+    @Value("${app.cookie.same-site:Lax}")
+    private String cookieSameSite;
+
+    @Value("${app.cookie.domain:}")
+    private String cookieDomain;
+
     @PostMapping("/login")
     public ResponseEntity<?> authenticateUser(
             @Valid @RequestBody LoginRequest loginRequest,
@@ -34,13 +48,20 @@ public class AuthController {
 
         AuthResponse response = authService.login(loginRequest);
 
-        ResponseCookie cookie = ResponseCookie.from("placementpro_token", response.getToken())
+        boolean secureCookie = shouldUseSecureCookie(request);
+
+        ResponseCookie.ResponseCookieBuilder cookieBuilder = ResponseCookie.from("placementpro_token", response.getToken())
                 .httpOnly(true)
-                .secure(false)
+            .secure(secureCookie)
                 .path("/")
                 .maxAge(24 * 60 * 60)
-                .sameSite("Lax")
-                .build();
+            .sameSite(cookieSameSite);
+
+        if (StringUtils.hasText(cookieDomain)) {
+            cookieBuilder.domain(cookieDomain.trim());
+        }
+
+        ResponseCookie cookie = cookieBuilder.build();
 
         return ResponseEntity.ok()
                 .header(HttpHeaders.SET_COOKIE, cookie.toString())
@@ -48,20 +69,35 @@ public class AuthController {
     }
 
     @PostMapping("/logout")
-    public ResponseEntity<?> logout() {
-        ResponseCookie cookie = ResponseCookie.from("placementpro_token", "")
+    public ResponseEntity<?> logout(HttpServletRequest request) {
+        ResponseCookie.ResponseCookieBuilder cookieBuilder = ResponseCookie.from("placementpro_token", "")
                 .httpOnly(true)
-                .secure(false)
+                .secure(shouldUseSecureCookie(request))
                 .path("/")
                 .maxAge(0)
-                .sameSite("Lax")
-                .build();
+                .sameSite(cookieSameSite);
+
+        if (StringUtils.hasText(cookieDomain)) {
+            cookieBuilder.domain(cookieDomain.trim());
+        }
+
+        ResponseCookie cookie = cookieBuilder.build();
 
         log.info("LOGOUT_SUCCESS");
 
         return ResponseEntity.ok()
                 .header(HttpHeaders.SET_COOKIE, cookie.toString())
                 .body(new MessageResponse("Logged out"));
+    }
+
+    @GetMapping("/me")
+    public ResponseEntity<UserDTO> getCurrentUser(Authentication authentication) {
+        if (authentication == null || authentication.getName() == null || "anonymousUser".equals(authentication.getName())) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Unauthorized");
+        }
+
+        UserDTO user = authService.getAuthenticatedUser(authentication.getName());
+        return ResponseEntity.ok(user);
     }
 
     @PostMapping("/register")
@@ -123,5 +159,18 @@ public class AuthController {
                     "SENSITIVE_ENDPOINT"
             );
         }
+    }
+
+    private boolean shouldUseSecureCookie(HttpServletRequest request) {
+        if (cookieSecure) {
+            return true;
+        }
+
+        String forwardedProto = request.getHeader("X-Forwarded-Proto");
+        if (forwardedProto != null && forwardedProto.equalsIgnoreCase("https")) {
+            return true;
+        }
+
+        return request.isSecure();
     }
 }

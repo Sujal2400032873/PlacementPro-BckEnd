@@ -179,6 +179,14 @@ public class AuthService {
         return new MessageResponse("Password has been reset successfully");
     }
 
+    public UserDTO getAuthenticatedUser(String email) {
+        User user = userRepository.findDetailedByEmail(email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Unauthorized"));
+
+        syncProfileCompletion(user);
+        return toUserDto(user);
+    }
+
     /** Get client IP from current request context */
     private String getClientIp() {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();

@@ -15,7 +15,6 @@ import com.placementpro.backend.security.CurrentUserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.modelmapper.ModelMapper;
 import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -38,9 +37,6 @@ class ApplicationServiceTest {
 
     @Mock
     private JobRepository jobRepository;
-
-    @Mock
-    private ModelMapper modelMapper;
 
     @Mock
     private CurrentUserService currentUserService;
@@ -115,7 +111,6 @@ class ApplicationServiceTest {
         when(applicationRepository.existsByJob_IdAndStudent_Id(1L, 7L)).thenReturn(false);
         when(jobRepository.findDetailedById(1L)).thenReturn(Optional.of(job));
         when(applicationRepository.save(any(Application.class))).thenReturn(saved);
-        when(modelMapper.map(saved, ApplicationDTO.class)).thenReturn(new ApplicationDTO());
 
         ApplicationDTO result = applicationService.applyForJob(ApplicationRequest.builder()
                 .jobId(1L)

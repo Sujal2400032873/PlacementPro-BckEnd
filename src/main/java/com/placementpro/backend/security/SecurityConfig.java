@@ -1,6 +1,7 @@
 package com.placementpro.backend.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -21,11 +22,15 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
 public class SecurityConfig {
+
+    @Value("${app.frontend.origins:http://localhost:5173}")
+    private String frontendOrigins;
 
     @Autowired
     private UserDetailsServiceImpl userDetailsService;
@@ -61,10 +66,12 @@ public class SecurityConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOrigins(List.of(
-            "http://localhost:5173",  // Vite dev server
-            "http://localhost:3000"   // optional React dev port
-        ));
+        List<String> allowedOriginPatterns = Arrays.stream(frontendOrigins.split(","))
+            .map(String::trim)
+            .filter(origin -> !origin.isEmpty())
+            .collect(Collectors.toList());
+
+        configuration.setAllowedOriginPatterns(allowedOriginPatterns);
 
         configuration.setAllowedMethods(List.of(
             "GET",
@@ -98,8 +105,14 @@ public class SecurityConfig {
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth ->
                 auth
-                    // Public: auth endpoints
-                    .requestMatchers("/api/auth/**").permitAll()
+                    // Public auth endpoints
+                    .requestMatchers(
+                        "/api/auth/login",
+                        "/api/auth/logout",
+                        "/api/auth/register",
+                        "/api/auth/forgot-password",
+                        "/api/auth/reset-password"
+                    ).permitAll()
                     .requestMatchers("/api/test/**").permitAll()
                     .requestMatchers("/api/health").permitAll()
                     .requestMatchers("/uploads/**").permitAll()
